@@ -1,1 +1,3 @@
+pre_model_cifar100_resnet50.pth is obtained by code pre_model_cifar100_resnet50.py
 
+pre_model_imagenet_resnet50.pth can be downloaded through link https://download.pytorch.org/models/resnet50-19c8e357.pth

@@ -201,7 +201,7 @@ for data_index in [2,0,1,2,3,4,5,6]:
             lr_scheduler1 = lr_scheduler.StepLR(optimizer1, step_size=30, gamma=0.1)
 
             pretrained_net2 = models.resnet50(pretrained=False)
-            pathfile = 'pretrained_models/pre_model_cifar100.pth'
+            pathfile = 'pretrained_models/pre_model_cifar100_resnet50.pth'
             pretrained_net2 = torch.load(pathfile)
             in_features = pretrained_net2.fc.in_features
             pretrained_net2.fc = nn.Linear(in_features, num_classes[data_index])
@@ -338,7 +338,7 @@ for data_index in [2,0,1,2,3,4,5,6]:
         lr_scheduler1 = lr_scheduler.StepLR(optimizer1, step_size=30, gamma=0.1)
 
         pretrained_net2 = models.resnet50(pretrained=False)
-        pathfile = 'pretrained_models/pre_model_cifar100.pth'
+        pathfile = 'pretrained_models/pre_model_cifar100_resnet50.pth'
         pretrained_net2 = torch.load(pathfile)
         in_features = pretrained_net2.fc.in_features
         pretrained_net2.fc = nn.Linear(in_features, num_classes[data_index])
